@@ -1,0 +1,44 @@
+.navbar{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0, 0.3);
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    border-radius: 100px;
+    backdrop-filter: blur(15%);
+    a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        background: transparent;
+        padding: 0.6rem;
+        border-radius: 50%;
+        display: flex;
+        color: var(--color-light);
+        font-size: 1.1rem;
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.3);
+            span{
+                opacity: 1;
+               
+            }
+        }
+       span{
+        position: absolute;
+        bottom: 16px;
+        opacity: 0;
+        transition: opacity ease-in-out .3s;
+        font-size: 12px;
+       }
+    }
+    .active{
+        background-color: var(--color-bg);
+        color: white;
+    }
+}
