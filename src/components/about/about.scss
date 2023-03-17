@@ -1,5 +1,4 @@
-.about{
-    height: 100vh;
+section{
     .about__container{
         display: grid;
         grid-template-columns: 30% 60%;
@@ -65,7 +64,7 @@
     
 }
 @media screen and (max-width:1024px) {
-        .about{
+        section{
             .about__container{
                 grid-template-columns: 1fr;
                   .about__me-img{
@@ -84,8 +83,7 @@
   
   /* ===========Monile devices ===========*/
   @media screen and (max-width:600px) {
-    .about{
-        height: 160vh;
+    section{
         .about__container{
             .about__me-img{
                 width: 65%;
@@ -93,6 +91,7 @@
         }
         .about__me-desc{
             width: 100%;
+            margin-bottom: 6rem;
             .about_skills{
                 grid-template-columns: 1fr 1fr;
             }
@@ -101,9 +100,6 @@
             p{
                 margin: 1.5rem 0;
                 text-align: justify;
-            }
-            .btn{
-              margin: 0 7rem;
             }
         }
     }
