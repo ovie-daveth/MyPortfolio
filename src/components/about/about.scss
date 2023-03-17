@@ -1,0 +1,110 @@
+.about{
+    height: 100vh;
+    .about__container{
+        display: grid;
+        grid-template-columns: 30% 60%;
+        gap: 10%;
+        .about__me-img{
+                border-radius: 1rem;
+                aspect-ratio: 1/1;
+                background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+                display: grid;
+                place-items: center;
+                &:hover{
+                    img{
+                        transform: rotate(0);
+                    }
+                }
+                img{
+                    border-radius: 1rem;
+                    transform: rotate(10deg);
+                    transition: transform ease-in-out .4s;
+                 
+                }
+        }
+        .about__me-desc{
+            .about_skills{
+               display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1.5rem;
+                article{
+                    background-color: var(--color-bg-variant);
+                    border: 1px solid transparent;
+                    border-radius: 1rem;
+                    padding: 2rem;
+                    text-align: center;
+                    transition: all ease-in-out .4s;
+                    cursor:default;
+                    margin-bottom: 20px;
+                    &:hover{
+                        background: transparent;
+                        border-color:var(--color-primary-variant)
+                    }
+                    .icons{
+                        color:var(--color-primary);
+                        font-size: 1.4rem;
+                        margin-bottom: 1rem;
+                    }
+                    h5{
+                        font-size: .95rem;
+                    }
+                    small{
+                        font-size: .7rem;
+                        color: var(--color-light);
+                       
+                    }
+                }
+              
+            }
+            p{
+                margin: 2rem 0 2.6rem;
+                color: var(--color-light);
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:1024px) {
+        .about{
+            .about__container{
+                grid-template-columns: 1fr;
+                  .about__me-img{
+                      width: 50%;
+                      margin: 2rem auto 4rem;
+              }
+              .about__me-desc{
+                  width: 100%;
+                  }
+                  p{
+                      margin: 1rem 0 1.5rem;
+                  }
+              }
+        }
+  }
+  
+  /* ===========Monile devices ===========*/
+  @media screen and (max-width:600px) {
+    .about{
+        height: 160vh;
+        .about__container{
+            .about__me-img{
+                width: 65%;
+                margin: 0 auto 3rem;
+        }
+        .about__me-desc{
+            width: 100%;
+            .about_skills{
+                grid-template-columns: 1fr 1fr;
+            }
+            }
+            
+            p{
+                margin: 1.5rem 0;
+                text-align: justify;
+            }
+            .btn{
+              margin: 0 7rem;
+            }
+        }
+    }
+}
