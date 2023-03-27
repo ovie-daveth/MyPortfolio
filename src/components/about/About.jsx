@@ -1,5 +1,5 @@
 import React from 'react'
-import about from '../../assets/me-about.jpg'
+import about from '../../assets/mypic61.jpg'
 import {FaAward} from "react-icons/fa"
 import './about.scss'
 
@@ -10,7 +10,9 @@ const About = () => {
       <h2>About me</h2>
       <div className="container about__container">
           <div className="about__me-img">
-              <img src={about} alt="about me" />
+             <div className="img">
+             <img src={about} alt="about me" />
+             </div>
           </div>
           <div className="about__me-desc">
             <div className="about_skills">

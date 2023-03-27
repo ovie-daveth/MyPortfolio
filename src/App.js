@@ -7,9 +7,19 @@ import Portfolio from './components/projects/Portfolio'
 import Testimonial from './components/testimonials/Testimonial'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <>
+    <ToastContainer 
+    position="top-right"
+    autoClose={3000}
+    closeOnClick
+    draggable
+    pauseOnHover
+    theme="dark"
+    />
       <Header />
       <Nav />
       <About />

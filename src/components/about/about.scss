@@ -8,17 +8,22 @@ section{
                 aspect-ratio: 1/1;
                 background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
                 display: grid;
-                place-items: center;
                 &:hover{
-                    img{
-                        transform: rotate(0);
+                    .img{
+                        img{
+                            transform: rotate(0);
+                        }
                     }
                 }
-                img{
-                    border-radius: 1rem;
-                    transform: rotate(10deg);
-                    transition: transform ease-in-out .4s;
-                 
+                .img{
+                    img{
+                        border-radius: 1rem;
+                        transform: rotate(10deg);
+                        transition: transform ease-in-out .4s;
+                        object-fit: cover;
+                        mix-blend-mode:hard-light;
+                        
+                    }
                 }
         }
         .about__me-desc{

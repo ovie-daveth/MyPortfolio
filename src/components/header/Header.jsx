@@ -1,6 +1,6 @@
 import React from 'react'
 import Cta from './Cta'
-import me from '../../assets/me.png'
+import me from '../../assets/mypic6.jpg'
 import './header.scss'
 import HeaderSocials from './HeaderSocials'
 import {BsArrowRight} from 'react-icons/bs'
@@ -18,7 +18,7 @@ const Header = () => {
         <div className="me">
           <img src={me} alt="me" />
         </div>
-        <a href="#contact" className='scroll__down'>Scroll Down <span><BsArrowRight /></span></a>
+        <a href="#footer" className='scroll__down'>Scroll Down <span><BsArrowRight /></span></a>
 
       </div>
     </section>

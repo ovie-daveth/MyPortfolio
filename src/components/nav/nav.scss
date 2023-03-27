@@ -11,6 +11,7 @@
     padding: 10px 20px;
     border-radius: 100px;
     backdrop-filter: blur(15%);
+    z-index: 100;
     a{
         display: flex;
         flex-direction: column;
