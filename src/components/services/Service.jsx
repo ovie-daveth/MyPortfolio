@@ -6,73 +6,63 @@ import './service.scss'
 const webdev = [
   {
     id: 1,
-    content: 'Create beautifull UIs and UX for all type of websites'
+    content: 'Create beautifull and responsive UIs for all type of websites'
   },
   {
     id: 2,
-    content: 'Create beautifull UIs and UX for all type of websites'
+    content: 'Code testing, code maintenance for user interfaces of web applications'
   },
   {
     id: 3,
-    content: 'Create beautifull UIs and UX for all type of websites'
+    content: 'Optimization of web Apps for speed and performance. '
   },
   {
     id: 4,
-    content: 'Create beautifull UIs and UX for all type of websites'
+    content: 'Available for both part-time and full-time gigs'
   },
-  {
-    id: 5,
-    content: 'Create beautifull UIs and UX for all type of websites'
-  },
+ 
 ]
 const database = [
   {
     id: 1,
-    content: 'Create beautifull UIs and UX for all type of websites'
+    content: 'Develop and maintain server-side codes using node.js, express & python'
   },
   {
     id: 2,
-    content: 'Create beautifull UIs and UX for all type of websites'
+    content: 'Design and manage databases (mySql, postgresql, mongodb and firestore)'
   },
   {
     id: 3,
-    content: 'Create beautifull UIs and UX for all type of websites'
+    content: 'Ensure scalability and performance'
   },
   {
     id: 4,
-    content: 'Create beautifull UIs and UX for all type of websites'
+    content: 'Creation and maintenance of RESTful APIs'
   },
   {
     id: 5,
-    content: 'Create beautifull UIs and UX for all type of websites'
-  },
-  {
-    id: 6,
-    content: 'Create beautifull UIs and UX for all type of websites'
+    content: 'Available for part-time and full-time gigs'
   },
   
 ]
 const content = [
   {
     id: 1,
-    content: 'Create beautifull UIs and UX for all type of websites'
+    content: 'Educate and Train students in web development online and onsite'
   },
   {
     id: 2,
-    content: 'Create beautifull UIs and UX for all type of websites'
+    content: 'Organizes Web development Bootcamps'
   },
   {
     id: 3,
-    content: 'Create beautifull UIs and UX for all type of websites'
+    content: 'Technical writing for blogs and brands (Check out my blog!)'
   },
   {
     id: 4,
-    content: 'Create beautifull UIs and UX for all type of websites'
+    content: 'Open to talk shows and seminar presentations on tech related programs'
   },
-  {
-    id: 5,
-    content: 'Create beautifull UIs and UX for all type of websites'
-  },
+ 
 ]
 
 const Service = () => {
@@ -83,7 +73,7 @@ const Service = () => {
       <div className="container service__conatainer">
           <div className="service__container-item">
               <div className="service__container-header">
-                <h2>Web development</h2>
+                <h2>Frontend Development</h2>
               </div>
               <ul>
                 {
@@ -98,7 +88,7 @@ const Service = () => {
           </div>
           <div className="service__container-item">
               <div className="service__container-header">
-                <h2>Database Management</h2>
+                <h2>Backend and API Development</h2>
               </div>
               <ul>
                 {
@@ -113,7 +103,7 @@ const Service = () => {
           </div>
           <div className="service__container-item">
               <div className="service__container-header">
-                <h2>Technical Writing</h2>
+                <h2>Miscellaneous</h2>
               </div>
               <ul>
                 {

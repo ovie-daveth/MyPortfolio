@@ -25,6 +25,7 @@ const Footer = () => {
         <ul>
             <li><a href="#">Learn programming</a></li>
             <li><a href="#">Collabo</a></li>
+            <li><a href="#">AfriDev ({'</>'} Blog)</a></li>
           </ul>
         </div>
     </div>

@@ -32,7 +32,7 @@ const About = () => {
                   <small>3+ years working</small>
               </article>
             </div>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla minima explicabo architecto iusto temporibus voluptate corporis accusamus sunt doloremque libero. Cupiditate perspiciatis dolores consectetur ducimus nostrum laudantium ad, nesciunt eum?</p>
+            <p>As a fullstack Javascript developer, I have expertise in both frontend and backend web development using modern tools and frameworks such as React, Angular, Node.js, and Express. With a strong understanding of software engineering principles and a passion for building elegant and efficient solutions, I enjoy bringing ideas to life by crafting scalable, maintainable, and user-friendly web applications. My skills in database design, server configuration, and RESTful API development, coupled with a keen eye for UI/UX design, allow me to deliver end-to-end solutions that meet the needs of clients and end-users alike.</p>
             <a href="#contact" className='btn btn-primary'>Let's Talk</a>
           </div>
       </div>

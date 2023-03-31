@@ -2,7 +2,7 @@ import React from 'react'
 import {BsGithub} from 'react-icons/bs'
 import {BiLinkAlt} from 'react-icons/bi'
 
-import img1 from '../../assets/portfolio2.jpg'
+import img1 from '../../assets/portfolio2.png'
 import img2 from '../../assets/portfolio1.png'
 import img3 from '../../assets/portfolio3.jpg'
 import img4 from '../../assets/portfolio4.jpg'
@@ -23,10 +23,10 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: 'NinjaPost - A Fullstack firebase functioning blog',
+      title: 'SpaceTravel - A Space Tourism multi-page website',
       img: img1,
-      live: '',
-      github: '',
+      live: 'https://spacetravel-zeta.vercel.app/',
+      github: 'https://github.com/ovie-daveth/SpaceTravel.git',
     },
     {
       id: 3,
