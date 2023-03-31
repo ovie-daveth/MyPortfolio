@@ -47,7 +47,7 @@ const Contact = () => {
                 <RiWhatsappFill />
                 <h3>WhatsApp</h3>
             
-                <a href="https://api.whatsapp.com/send?phone+2348149485675" target="_blank" rel="noreferrer">Send a message</a>
+                <a href="https://wa.me/+2348149485675" target="_blank" rel="noreferrer">Send a message</a>
             </article>
         </div>
         <form className="direct" ref={form} onSubmit={sendEmail}>

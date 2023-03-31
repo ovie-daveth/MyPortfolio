@@ -3,7 +3,7 @@ import {BsGithub} from 'react-icons/bs'
 import {BiLinkAlt} from 'react-icons/bi'
 
 import img1 from '../../assets/portfolio2.jpg'
-import img2 from '../../assets/portfolio1.jpg'
+import img2 from '../../assets/portfolio1.png'
 import img3 from '../../assets/portfolio3.jpg'
 import img4 from '../../assets/portfolio4.jpg'
 import img5 from '../../assets/portfolio5.png'
@@ -16,33 +16,45 @@ const Portfolio = () => {
   const  projects = [
     {
       id: 1,
-      title: 'NinjaPost - A Fullstack firebase functioning blog',
-      img: img1
+      title: 'TechTime - A landing page for an LMS site',
+      img: img2,
+      live: 'https://dynamic-meerkat-610c40.netlify.app/',
+      github: 'https://github.com/ovie-daveth/TechTime.git',
     },
     {
       id: 2,
       title: 'NinjaPost - A Fullstack firebase functioning blog',
-      img: img2
+      img: img1,
+      live: '',
+      github: '',
     },
     {
       id: 3,
       title: 'NinjaPost - A Fullstack firebase functioning blog',
-      img: img3
+      img: img3,
+      live: '',
+      github: '',
     },
     {
       id: 4,
       title: 'NinjaPost - A Fullstack firebase functioning blog',
-      img: img4
+      img: img4,
+      live: '',
+      github: '',
     },
     {
       id: 5,
       title: 'NinjaPost - A Fullstack firebase functioning blog',
-      img: img5
+      img: img5,
+      live: '',
+      github: '',
     },
     {
       id: 6,
       title: 'NinjaPost - A Fullstack firebase functioning blog',
-      img: img6
+      img: img6,
+      live: '',
+      github: '',
     },
   ]
 
@@ -59,8 +71,8 @@ const Portfolio = () => {
               </div>
                 <h2>{item.title}</h2>
                 <div className="icons">
-                  <p> <a href="https://www.github.com/ovie-daveth" target="_blank" rel="noreferrer"><span><BsGithub /></span><span>Github</span></a> </p>
-                  <p> <a href="https://dribble.com" target="_blank" rel="noreferrer"><span><BiLinkAlt /></span> <span>Live Demo</span></a> </p>
+                  <p> <a href={item.github} target="_blank" rel="noreferrer"><span><BsGithub /></span><span>Github</span></a> </p>
+                  <p> <a href={item.live} rel="noreferrer" target="_blank"><span><BiLinkAlt /></span> <span>Live Demo</span></a> </p>
                 </div>
             </div>
           ))
