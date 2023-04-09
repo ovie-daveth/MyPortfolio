@@ -30,7 +30,7 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: 'NinjaPost - A Fullstack firebase functioning blog',
+      title: 'DaveMedia - A low budget Youtube clone',
       img: img3,
       live: 'https://dave-media-15g378tui-ovie-daveth.vercel.app/',
       github: 'https://github.com/ovie-daveth/DaveMedia.git',
