@@ -4,7 +4,7 @@ import {BiLinkAlt} from 'react-icons/bi'
 
 import img1 from '../../assets/portfolio2.png'
 import img2 from '../../assets/portfolio1.png'
-import img3 from '../../assets/portfolio3.jpg'
+import img3 from '../../assets/portfolio3.png'
 import img4 from '../../assets/portfolio4.jpg'
 import img5 from '../../assets/portfolio5.png'
 import img6 from '../../assets/portfolio6.jpg'
@@ -32,8 +32,8 @@ const Portfolio = () => {
       id: 3,
       title: 'NinjaPost - A Fullstack firebase functioning blog',
       img: img3,
-      live: '',
-      github: '',
+      live: 'https://dave-media-15g378tui-ovie-daveth.vercel.app/',
+      github: 'https://github.com/ovie-daveth/DaveMedia.git',
     },
     {
       id: 4,
