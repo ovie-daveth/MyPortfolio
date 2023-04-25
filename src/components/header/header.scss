@@ -71,12 +71,13 @@ section{
 //     }
 //   }
   
-  /* ===========Monile devices ===========*/
+  /* ===========Mobile devices ===========*/
   
   @media screen and (max-width:600px) {
     section{
       
       .header__container{
+        flex-direction: column;
         .header__socials, .scroll__down{
             display: none;
         }
