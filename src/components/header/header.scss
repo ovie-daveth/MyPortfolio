@@ -65,11 +65,12 @@ section{
 
 /* ===========Medium devices ===========*/
 
-// @media screen and (max-width:1024px) {
-//     section{
-//         height: 68vh;
-//     }
-//   }
+@media screen and (max-width:1024px) {
+  .header__container{
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+  }
   
   /* ===========Mobile devices ===========*/
   
@@ -77,7 +78,7 @@ section{
     section{
       
       .header__container{
-        flex-direction: column;
+      
         .header__socials, .scroll__down{
             display: none;
         }
