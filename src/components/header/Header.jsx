@@ -10,11 +10,13 @@ const Header = () => {
   return (
     <section id="home" className='.section'>
       <div className="container header__container">
-        <h5>Hello I'm</h5>
-        <h1>Omokefe David</h1>
-        <h5 className='text-light'>Full Stack developer</h5>
-        <Cta />
-        <HeaderSocials />
+        <div className="intro">
+          <h5>Hello I'm</h5>
+          <h1>Omokefe David</h1>
+          <h5 className='text-light'>Full Stack developer</h5>
+          <Cta />
+          <HeaderSocials />
+        </div>
         <div className="me">
           <img src={me} alt="me" />
         </div>
