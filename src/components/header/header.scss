@@ -78,7 +78,9 @@ section{
     section{
       
       .header__container{
-      
+        .me{
+          margin: 4rem 1rem;;
+        }
         .header__socials, .scroll__down{
             display: none;
         }
