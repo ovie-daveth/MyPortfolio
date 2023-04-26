@@ -3,12 +3,12 @@ section{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 5rem;
+        padding: 0 2rem;
         text-align: center;
         height: 100%;
         position: relative;
         h5{
-            margin-bottom: 25px;
+            margin-bottom: 25px; 
         }
         /*====CTA ======*/
         .cta{
@@ -38,9 +38,9 @@ section{
             width: 24rem;
             height: 24rem;
             overflow-y: hidden;
-            margin: 4rem auto;
+           
             border-radius: 50%;
-            padding: 5rem 2.5rem 0 0;
+            padding: 5rem 2rem 0 0;
             img{
              transform: scale(1.4);
              
@@ -49,8 +49,8 @@ section{
           }
           .scroll__down{
             position: absolute;
-            right: 0;
-            bottom: 2rem;
+            right: -5rem;
+            bottom: -3rem;
             transform: rotate(90deg);
             display: flex;
             font-weight: 300;

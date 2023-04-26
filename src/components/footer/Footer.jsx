@@ -3,6 +3,7 @@ import {BsTwitter, BsFacebook, BsYoutube} from 'react-icons/bs'
 import {RiInstagramFill} from 'react-icons/ri'
 
 import './Footer.scss'
+import { Link } from 'react-router-dom'
 
 
 const Footer = () => {
@@ -23,7 +24,7 @@ const Footer = () => {
         </div>
         <div className="links">
         <ul>
-            <li><a href="#">Learn programming</a></li>
+            <li><Link to='/courses'><a href="#">Learn programming</a></Link></li>
             <li><a href="#">Collabo</a></li>
             <li><a href="#">AfriDev ({'</>'} Blog)</a></li>
           </ul>

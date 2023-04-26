@@ -1,14 +1,10 @@
-import Header from './components/header/Header'
 import Nav from './components/nav/Nav'
-import About from './components/about/About'
-import Experience from './components/experience/Experience'
-import Service from './components/services/Service'
-import Portfolio from './components/projects/Portfolio'
-import Testimonial from './components/testimonials/Testimonial'
-import Contact from './components/contact/Contact'
+import Home from './pages/Home'
 import Footer from './components/footer/Footer'
+import Courses from './components/courses/Courses'
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Route, Routes } from 'react-router-dom'
 function App() {
   return (
     <>
@@ -20,15 +16,12 @@ function App() {
     pauseOnHover
     theme="dark"
     />
-      <Header />
       <Nav />
-      <About />
-      <Experience />
-      <Service />
-      <Portfolio />
-      <Testimonial />
-      <Contact />
-      <Footer />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path='/courses' element={<Courses />} />
+    </Routes>
+    <Footer />
     </>
   );
 }
