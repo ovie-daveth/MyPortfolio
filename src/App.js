@@ -5,7 +5,11 @@ import Courses from './components/courses/Courses'
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Route, Routes } from 'react-router-dom'
+import { useLocation } from 'react-router-dom';
+import Register from './pages/register/Register';
+
 function App() {
+  const location = useLocation()
   return (
     <>
     <ToastContainer 
@@ -16,10 +20,13 @@ function App() {
     pauseOnHover
     theme="dark"
     />
-      <Nav />
+      {
+        location.pathname === '/' ? <Nav /> : null
+      }
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path='/courses' element={<Courses />} />
+      <Route path='/register' element={<Register />} />
     </Routes>
     <Footer />
     </>

@@ -14,7 +14,7 @@ const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
+    console.log(e.value)
     emailjs.sendForm('service_cqu0kf2', 'template_cnc0h81', form.current, '5mk5FaTyFLmh5tHZU')
       .then((result) => {
           console.log(result.text);
@@ -51,9 +51,9 @@ const Contact = () => {
             </article>
         </div>
         <form className="direct" ref={form} onSubmit={sendEmail}>
-              <input type="text" name="name" id="name" placeholder='Your fullname' />
-              <input type="email" name="email" placeholder='Your email'  />
-              <textarea name="message" id="message" cols="3" rows="4" placeholder='Your Message'></textarea>
+              <input required type="text" name="name" id="name" placeholder='Your fullname' />
+              <input required type="email" name="email" placeholder='Your email'  />
+              <textarea required name="message" id="message" cols="3" rows="4" placeholder='Your Message'></textarea>
               <button className='btn btn-primary'>Send Message</button>
         </form>
       </div>

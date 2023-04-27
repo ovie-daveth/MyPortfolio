@@ -1,0 +1,73 @@
+.registerPage{
+    padding: 1rem 20px;
+    h1{
+        font-size: 20px;
+        text-align: center;
+        color: rgb(52, 52, 235);
+
+    }
+    small{
+        color: pink;
+        margin-left: 10px;
+    }
+    form{
+        background-color: white;
+        color: black;
+        padding: 1.5rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        margin-top: 1.6rem;
+    }
+    .form___data{
+        display: flex;
+        flex-direction: column;
+        input{
+            background-color: rgb(52, 52, 235);
+            padding: 0.5rem 10px;
+            border-radius: 3px;
+            &::placeholder{
+                color: white;
+                font-weight: 500;
+            }
+            color: rgb(44, 43, 43);
+        }
+        input[type = submit]{
+            color: white;
+            cursor: pointer;
+            transition: background-color .3s ease-in-out;
+            &:hover{
+                background-color: blue;
+            }
+        }
+        small{
+            color: rgb(52, 52, 235);
+            display: none;
+        }
+        label{
+            display: flex;
+            gap: 10px;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .registerPage{
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+        h1{
+            font-size: 30px;
+        }
+        small{
+            font-size: 18px;
+        }
+        form{
+           text-align: left;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .registerPage{
+            width: 50%;
+    }
+}
