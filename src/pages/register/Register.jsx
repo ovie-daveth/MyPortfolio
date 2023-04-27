@@ -1,6 +1,10 @@
 import React, {useState} from 'react'
 import './register.scss'
+import { toast } from 'react-toastify'
+import { useNavigate } from 'react-router-dom'
 const Register = () => {
+    const nav = useNavigate();
+    
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
@@ -39,6 +43,9 @@ const Register = () => {
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
+
+    toast.success("Form submitted")
+    nav("/payment")
     }
 
   return (
