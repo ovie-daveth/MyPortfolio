@@ -2,10 +2,9 @@ import React, {useState} from 'react'
 import './register.scss'
 import { toast } from 'react-toastify'
 import { useNavigate } from 'react-router-dom'
-const Register = () => {
+const Register = ({name, setName}) => {
     const nav = useNavigate();
-    
-    const [name, setName] = useState('')
+
     const [email, setEmail] = useState('')
     const [phone, setPhone] = useState('')
     const [residence, setResidence] = useState('')
@@ -30,22 +29,28 @@ const Register = () => {
             willingToLearn,
           });
 
-        var myHeaders = new Headers();
-        myHeaders.append("Content-Type", "application/json");
-        var requestOptions = {
-        method: "post",
-        headers: myHeaders,
-        redirect: "follow",
-        body: JSON.stringify({"fields":[{"field":"email","value": email},{"field":"fullname","value":name},{"field":"phone","value":phone},{"field":"residence","value": residence},{"field":"isStudent?","value": isStudent},{"field":"course","value": course},{"field":"experience","value":experience},{"field":"GetInfoFrom","value":source},{"field":"3hoursTimeframe","value":willingToLearn}]})
-        };
+          if(name.length <= 2 || email.length <= 2 || phone.length <= 2 || residence.length <= 2){
+     
+            toast.error("Please fill in all fields")
+         } else{
+            var myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+            var requestOptions = {
+            method: "post",
+            headers: myHeaders,
+            redirect: "follow",
+            body: JSON.stringify({"fields":[{"field":"email","value": email},{"field":"fullname","value":name},{"field":"phone","value":phone},{"field":"residence","value": residence},{"field":"isStudent?","value": isStudent},{"field":"course","value": course},{"field":"experience","value":experience},{"field":"GetInfoFrom","value":source},{"field":"3hoursTimeframe","value":willingToLearn}]})
+            };
 
-    fetch("https://v1.nocodeapi.com/davet/nForms/swupvbibpqqRntkD/data", requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
+            fetch("https://v1.nocodeapi.com/davet/nForms/swupvbibpqqRntkD/data", requestOptions)
+            .then(response => response.text())
+            .then(result => console.log(result))
+            .catch(error => console.log('error', error));
 
-    toast.success("Form submitted")
-    nav("/payment")
+            toast.success("Form submitted")
+            nav("/payment")
+         }
+    
     }
 
   return (
