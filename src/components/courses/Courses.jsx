@@ -7,6 +7,8 @@ import web from '../../assets/web.jpg'
 import backend from '../../assets/backend.jpg'
 import node from '../../assets/node.jpg'
 import {TbCurrencyNaira} from 'react-icons/tb'
+import CourseHeader from './CourseHeader'
+import Testimonial from '../testimonials/Testimonial'
 
 const Courses = () => {
     const nav = useNavigate()
@@ -14,11 +16,10 @@ const Courses = () => {
         nav('/register')
     }
     return <main>
+        <CourseHeader />
         <div className="home"> 
             <div className='home-desc'>
-                <h2>Welcome to</h2>
-                <h1>Daveton <span>Academy</span></h1>
-                <p>The best one on one mentoring academy out there</p>
+               <h1>Become a proficient web developer, and attract high paying jobs within 6 months of good training.</h1>
                 <small>We offer personalize tutorial and one on one mentorship to our students at affordable prices and optiumum results</small>
                 <div className="actions">
                     <button><Link to="/">Contact me</Link></button>
@@ -47,7 +48,7 @@ const Courses = () => {
                 <video src={vidDemo} controls autoPlay muted></video>
             </div>
         </div>
-        <div className="available" id="course">
+        <div className="available" id="courses">
             <h2>Available courses</h2>
             <div className="course__container">
                 <div className="courses">
@@ -110,6 +111,9 @@ const Courses = () => {
                     </div>
                 </div>
             </div>
+        </div>
+        <div className="testify" id="testify">
+        <Testimonial />
         </div>
     </main>
 }
