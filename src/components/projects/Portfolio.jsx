@@ -5,7 +5,7 @@ import {BiLinkAlt} from 'react-icons/bi'
 import img1 from '../../assets/portfolio2.png'
 import img2 from '../../assets/portfolio1.png'
 import img3 from '../../assets/portfolio3.png'
-import img4 from '../../assets/portfolio4.jpg'
+import img4 from '../../assets/portfolio4.png'
 import img5 from '../../assets/portfolio5.png'
 import img6 from '../../assets/portfolio6.jpg'
 
@@ -37,10 +37,10 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: 'NinjaPost - A Fullstack firebase functioning blog',
+      title: 'Voom - A low budget video conference application',
       img: img4,
-      live: '',
-      github: '',
+      live: 'https://voom-sepia.vercel.app/',
+      github: 'https://github.com/ovie-daveth/20FullStackProjects_in-100Days/tree/main/voom',
     },
     {
       id: 5,
